@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 2rem;
+    border: 1.5px solid black;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.welcome-text h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #888;
+}
+
+.login-box {
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #777;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin-top: 40px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #555;
+}
+
+.reset-link {
+    margin-top: 10px;
+}
+
+.reset-link a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.reset-link a span {
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-group {
+    position: relative; /* Position relative for the toggle icon */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+    user-select: none;
+}
+
+.toggle-password:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
